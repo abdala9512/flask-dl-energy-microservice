@@ -8,7 +8,7 @@ Energy generation and capacity forecast as Flask microservice.
 ![app screenshot](notebooks/img/eg_lstm.png)
 
 ### Energy capacity
-![app screenshot](notebooks/img/ec_lstm.pn)
+![app screenshot](notebooks/img/ec_lstm.png)
 
 
 ## Data
