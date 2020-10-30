@@ -1,6 +1,6 @@
-# Energy generation and capacity forecasting microservice
+# Energy generation and capacity forecasting
 
-Energy generation and capacity forecast as Flask microservice
+Energy generation and capacity forecast as Flask microservice.
 
 
 
