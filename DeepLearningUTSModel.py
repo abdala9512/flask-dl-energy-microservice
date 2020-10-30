@@ -1,3 +1,5 @@
+"""Deep Learning Univariate Modeling Class"""
+
 from tensorflow.keras.layers import LSTM, Dense
 from tensorflow.keras.models import Sequential
 import numpy as np
