@@ -1,6 +1,6 @@
 {
     "name": "LSTM REST API for energy forecasting",
     "description": "Simple Flask REST API that servers energy genreation anda capcity forecast",
-    "logo": "https://www.python.org/static/community_logos/python-powered-h-140x182.png" ,
+    "logo": "https://es.wikipedia.org/wiki/Archivo:Python-logo-notext.svg" ,
     "keywords": ["python", "LSTM", "API", "Forecast"]
 }
