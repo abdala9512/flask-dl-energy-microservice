@@ -14,13 +14,14 @@ app = Flask(__name__)
 def index():
     return '<h1>LSTM model </h1>'
 
-@app.route('/generation-forecast', methods=['GET', 'POST'])
-def g_forecast():
+@app.route('/generation-forecast/<n_ahead>', methods=['GET', 'POST'])
+def g_forecast(n_ahead):
 
     data = {"success": False}
     params = flask.request.json
 
-    
+    data['prediction'] = f"The prediction is {n_ahead} days in the future"
+
     ts = np.array(params.get("ts"))
     X, y = DeepLearningUTSModel.create_ts_sequences(series=ts, lag=2)
     data["response"] = LSTM_gen.predict(X).tolist()
@@ -28,10 +29,11 @@ def g_forecast():
 
     return flask.jsonify(data)
 
-@app.route('/capacity-forecast')
-def c_forecast():
+@app.route('/capacity-forecast/<n_ahead>')
+def c_forecast(n_ahead):
     return '<h1>LSTM Energy capacity forecast </h1>'
 
 
 if __name__ == '__main__':
     app.run(port='6600', host='0.0.0.0')
+
