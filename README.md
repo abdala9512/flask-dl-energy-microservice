@@ -22,5 +22,11 @@ docker build -t lstm-api .
  docker run -d -p 6600:6600 --name lstm-api lstm-api
 ```
 
+### Running on heroku
+
+Deploy the API on Heroku
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Data
 http://www.upme.gov.co/Reports/Default.aspx?ReportPath=/SIEL+UPME/Indicadores/Indicadores+Oferta&ViewMode=Detail
