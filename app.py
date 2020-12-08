@@ -1,5 +1,5 @@
 import flask
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, redirect, url_for
 
 import numpy as np
 from DeepLearningUTSModel import DeepLearningUTSModel
@@ -13,6 +13,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template("LSTM_home.html")
+
+@app.route('/dataviz')
+def data_viz(): 
+    return render_template("data.html")
 
 @app.route('/generation-forecast/<n_ahead>', methods=['GET', 'POST'])
 def g_forecast(n_ahead):
