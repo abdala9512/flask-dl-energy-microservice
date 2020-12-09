@@ -38,10 +38,25 @@
             <div class="container">
                 <div class="col pt-4">
                     <div class="row">
-                        <h1>Forecasting</h1>
+                        <h1>Energy Forecasting API</h1>
                     </div>
                     <div class="row">
-                        <p>hola <code>curl</code> </p>
+                        <p>This is a simple API that returns forecasts of capacity and production of energy in Colombia </p>
+                        <p>The API was build with  <code>flask</code> python library and the models implement until now were trained with <code>tensorflow</code> and <code>prohet</code></p>
+                    </div>
+                    <div class="row">
+                        <h3>JSON</h3>
+                    </div>
+                    <div class="row">
+                        <pre>
+                            <code>
+                                {
+                                    "success":True,
+                                    "prediction": "The prediction is -n_ahead- days in the future"
+                                    "response": [456.7, 985.9]
+                                }
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </div>    
